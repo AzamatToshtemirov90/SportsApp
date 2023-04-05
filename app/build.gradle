@@ -41,8 +41,7 @@ android {
         applicationId "com.azamat.sportsapp"
         minSdk 21
         targetSdk 33
-//        versionCode getBuildNum()
-        versionCode 1
+        versionCode getBuildNum()
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
