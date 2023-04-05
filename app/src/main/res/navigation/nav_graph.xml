@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/playerListFragment">
+
+    <fragment
+        android:id="@+id/playerListFragment"
+        android:name="com.azamat.sportsapp.ui.fragment.playerlist.PlayerListFragment"
+        android:label="PlayerListFragment" >
+        <action
+            android:id="@+id/action_playerListFragment_to_playerDetailsFragment"
+            app:destination="@id/playerDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerDetailsFragment"
+        android:name="com.azamat.sportsapp.ui.fragment.details.PlayerDetailsFragment"
+        android:label="PlayerDetailsFragment" >
+        <action
+            android:id="@+id/action_playerDetailsFragment_to_playerListFragment"
+            app:destination="@id/playerListFragment" />
+    </fragment>
+</navigation>
